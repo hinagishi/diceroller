@@ -12,5 +12,5 @@ module.exports = (robot) ->
         if msg.match[3] != undefined
             sum += parseInt(msg.match[3], 10)
 
-        msg.send "#{count}, #{base}, #{num}, #{sum}"
+        msg.send "[#{num}] = #{sum}"
 
