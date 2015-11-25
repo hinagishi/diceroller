@@ -13,5 +13,5 @@ module.exports = (robot) ->
             num[count] = parseInt(msg.match[3], 10)
             sum += num[count]
 
-        msg.send "[#{num}] = #{sum}"
+        msg.send "#{msg.message.user.name} rolled [#{num}] = #{sum}"
 
